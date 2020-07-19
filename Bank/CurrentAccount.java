@@ -1,6 +1,6 @@
-public class SavingsAccount extends BankAccounts {
+public class CurrentAccount extends BankAccounts {
 
-    public static final long MINIMUM_BALANCE = BankConstants.SAVING_ACCOUNT_MINIMUM_BALANCE;
+    public static final long MINIMUM_BALANCE = BankConstants.CURRENT_ACCOUNT_MINIMUM_BALANCE;
     public static final double INTEREST_RATE = BankConstants.CURRENT_ACCOUNT_INTEREST_RATE;
 
     public long getMinimumBalance() {
@@ -13,7 +13,6 @@ public class SavingsAccount extends BankAccounts {
 
     @Override
     public String getType() {
-        return BankAccountType.SAVING.toString();
+        return BankAccountType.CURRENT_ACCOUNT.toString();
     }
-
 }
